@@ -56,10 +56,12 @@ lib/
 5. jalankan aplikasi
   ```bash
   flutter run
-
-
+  ```
 ## Catatan penting 
 1. aplikasi memerlukan izin lokasi
 2. pastikan device/emulator mendukung GPS
+
+
+
 
 

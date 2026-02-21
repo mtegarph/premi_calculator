@@ -4,6 +4,7 @@ import 'package:calculator_agen/features/calculator/domain/entities/product_enti
 import 'package:calculator_agen/features/calculator/presentation/bloc/premi_bloc.dart';
 import 'package:calculator_agen/features/calculator/presentation/widgets/dialog_failure.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
 
@@ -45,16 +46,19 @@ class PremiCalculator extends StatelessWidget {
                   TextField(
                     controller: state.ageController,
                     keyboardType: TextInputType.number,
-                    decoration: InputDecoration(
+                    inputFormatters: [
+                      FilteringTextInputFormatter.digitsOnly,
+                    ],
+                    decoration: const InputDecoration(
                       labelText: 'Umur',
-                      border: const OutlineInputBorder(),
-                      errorText: _validateAge(state.ageController.text,
-                          data.minEntryAge, data.maxEntryAge),
+                      border: OutlineInputBorder(),
                     ),
                     onChanged: (value) {
+                      final cleanValue =
+                          value.replaceAll(RegExp(r'[^0-9]'), '');
                       context
                           .read<PremiBloc>()
-                          .add(PremiEvent.updateAge(value));
+                          .add(PremiEvent.updateUP(cleanValue));
                     },
                   ),
                   const SizedBox(height: 16),
