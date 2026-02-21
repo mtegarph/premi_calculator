@@ -1,0 +1,75 @@
+{
+    "status": "success",
+    "data": [
+        {
+            "id": "PROD-001",
+            "name": "LifeGuard Term Life",
+            "category": "Life Insurance",
+            "description": "Perlindungan jiwa murni dengan premi kompetitif.",
+            "image_url": "https://api.yourcompany.com/assets/images/term-life.png",
+            "min_entry_age": 18,
+            "max_entry_age": 60,
+            "setup": {
+                "currency": "IDR",
+                "base_rate": 1500,
+                "admin_fee": 25000,
+                "mortality_table": [
+                    {
+                        "age_range": "18-30",
+                        "rate_per_mille": 1.25
+                    },
+                    {
+                        "age_range": "31-45",
+                        "rate_per_mille": 2.45
+                    },
+                    {
+                        "age_range": "46-60",
+                        "rate_per_mille": 5.80
+                    }
+                ],
+                "occupational_class_multiplier": {
+                    "class_1": 1.0,
+                    "class_2": 1.2,
+                    "class_3": 1.5,
+                    "class_4": 2.0
+                },
+                "frequency_discount": {
+                    "monthly": 1.0,
+                    "quarterly": 0.98,
+                    "semi_annually": 0.96,
+                    "annually": 0.92
+                }
+            }
+        },
+        {
+            "id": "PROD-002",
+            "name": "Accident Shield Plus",
+            "category": "Personal Accident",
+            "description": "Proteksi finansial akibat kecelakaan dan biaya medis darurat.",
+            "image_url": "https://api.yourcompany.com/assets/images/accident.png",
+            "min_entry_age": 1,
+            "max_entry_age": 65,
+            "setup": {
+                "currency": "IDR",
+                "base_rate": 800,
+                "admin_fee": 10000,
+                "mortality_table": [
+                    {
+                        "age_range": "1-65",
+                        "rate_per_mille": 0.95
+                    }
+                ],
+                "occupational_class_multiplier": {
+                    "class_1": 1.0,
+                    "class_2": 1.5,
+                    "class_3": 2.5,
+                    "class_4": 4.0
+                },
+                "frequency_discount": {
+                    "monthly": 1.0,
+                    "annually": 0.90
+                }
+            }
+        }
+    ]
+}
