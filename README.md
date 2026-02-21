@@ -24,6 +24,7 @@ Aplikasi Flutter untuk menghitung premi asuransi jiwa (contoh: Term Life) berdas
 
 
 ## Struktur Folder (Clean Architecture)
+```bash
 lib/
 ├── core/                # konfigurasi global (locator, hive init, dll)
 ├── features/
@@ -38,7 +39,7 @@ lib/
 └── app.dart
 └── injector.dart
 └── main.dart
-
+```
 ## Cara Menjalankan Aplikasi
 
 1. Pastikan Flutter SDK ≥ 3.16 sudah terinstall
