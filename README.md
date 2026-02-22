@@ -61,7 +61,21 @@ lib/
 1. aplikasi memerlukan izin lokasi
 2. pastikan device/emulator mendukung GPS
 
+## Penggunaan AI dalam Pengembangan
 
+Penggunaan AI dalam Proses Pengembangan
+
+Saya mengerjakan proyek ini secara manual sebagai developer utama, mulai dari merancang arsitektur, menulis logika bisnis, hingga implementasi fitur inti.  
+
+AI saya gunakan sebagai **asisten penolong** di dua area utama:
+1. **Desain UI/UX**  
+   Membantu saya menyusun layout card produk, dialog hasil premi, styling komponen GestureDetector, serta membuat helper function formatting yang rapi dan konsisten (mata uang, frekuensi pembayaran, kelas pekerjaan).
+
+2. **Validasi & Diskusi Teknis**  
+   Digunakan untuk berdiskusi mengenai asumsi rumus premi, penanganan edge case (misalnya umur di luar range), dan konfirmasi apakah pendekatan yang saya ambil sudah sesuai best practice.  
+   Namun, rumus perhitungan, struktur Bloc, repository, enkripsi Hive, dan seluruh kode inti tetap saya tulis sendiri — AI tidak menghasilkan atau mengganti bagian tersebut secara otomatis.
+
+Kesimpulan, proyek ini adalah hasil kerja yang saya buat dukungan AI sebagai alat bantu untuk mempercepat desain visual dan memvalidasi ide, bukan produk yang di-generate penuh oleh AI.
 
 
 
